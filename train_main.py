@@ -13,6 +13,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='train Woodbury Glow')
 
     # input path
+    parser.add_argument("-d", "--dataset_name", type=str, default="cifar10")
     parser.add_argument("--train_portion", type=str, default="train")
     parser.add_argument("--valid_portion", type=str, default="test")
     parser.add_argument("-r", "--dataset_root", type=str, default="./datasets")
